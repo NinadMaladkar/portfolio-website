@@ -1,0 +1,83 @@
+.logo-class :hover {
+
+  animation: rubberBand;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */
+}
+/* Common Styles */
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+    overflow-x: hidden;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+}
+
+
+/* Heading Section */
+.header-menu :hover {
+  color: #64ffda;
+  animation: pulse;
+  animation-duration: 1s;
+}
+/* Home Section */
+.heading {
+  font-family: 'Calibre';
+  font-weight: 600;
+}
+
+.link-arrow {
+  align-self: center;
+}
+
+.typing-animation {
+  overflow: hidden;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 2s both;
+    animation-delay: 0.5s;
+}
+
+.heading-container {
+  display: inline-block;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+/* About Section */
+.chakraUi {
+  background-color: #319795;
+}
+/* Projects Section */
+/* Experience Section */
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1s;
+}
+/* Contact Section */
+
+.contact-input {
+  border-color: #319795
+}
+
+
+
+
+
+
+
