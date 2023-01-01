@@ -1,7 +1,6 @@
 import React from 'react';
 import { ChakraProvider, Box, theme, Divider } from '@chakra-ui/react';
 import 'animate.css';
-import { AiOutlineUp } from 'react-icons/ai';
 
 import './App.css';
 
@@ -14,12 +13,6 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 function App() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
   return (
     <ChakraProvider theme={theme}>
       <Header />

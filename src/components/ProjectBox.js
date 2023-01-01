@@ -40,6 +40,7 @@ const ProjectBox = ({
         x: startPoint,
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
   return (
     <div ref={ref}>
