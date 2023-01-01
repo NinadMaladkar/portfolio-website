@@ -9,6 +9,8 @@ import {
   Image,
   Heading,
   Link,
+  Tag,
+  Box,
 } from '@chakra-ui/react';
 
 import { SiGithub } from 'react-icons/si';
@@ -23,6 +25,7 @@ const ProjectBox = ({
   alignImage,
   githubLink,
   linkToApp,
+  technologies,
 }) => {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
@@ -52,22 +55,20 @@ const ProjectBox = ({
           py={4}
           px={12}
           mb={4}
-          borderRadius={8}
+          borderRadius={24}
           border="1px"
           borderColor="gray.600"
           backgroundColor="blackAlpha.300"
-          // className="animate__animated animate__fadeInRight animate_slow animate__delay-4s"
         >
           {alignImage === 'right' ? null : (
             <Image
+              borderRadius={24}
               objectFit="cover"
-              maxW={{ base: '100%', sm: '200px' }}
+              maxW={{ base: '100%', sm: '300px' }}
               src={image}
               alt={name}
             />
           )}
-
-          {/* Change style for buttons */}
 
           <Stack>
             <CardBody textAlign="start">
@@ -75,13 +76,22 @@ const ProjectBox = ({
                 {name}
               </Heading>
               <Text py="2">{description}</Text>
+              <Box display="flex" wrap="wrap" gap={2} mt={2}>
+                {technologies.map(tech => (
+                  <Tag
+                    borderRadius="full"
+                    size="lg"
+                    colorScheme="green"
+                    variant="solid"
+                    maxW="25vw"
+                  >
+                    {tech}
+                  </Tag>
+                ))}
+              </Box>
             </CardBody>
 
-            <CardFooter
-              display="flex"
-              justifyContent={alignImage === 'right' ? 'end' : 'start'}
-              gap={2}
-            >
+            <CardFooter display="flex" gap={2}>
               <Link href={githubLink} isExternal>
                 <Button
                   variant="outline"
@@ -105,7 +115,8 @@ const ProjectBox = ({
           {alignImage === 'right' ? (
             <Image
               objectFit="cover"
-              maxW={{ base: '100%', sm: '200px' }}
+              maxW={{ base: '100%', sm: '300px' }}
+              borderRadius={24}
               src={image}
               alt={name}
             />
