@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   Box,
   Button,
@@ -8,6 +8,7 @@ import {
   Input,
   Text,
   Textarea,
+  useToast,
   VStack,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
@@ -15,8 +16,7 @@ import emailjs from '@emailjs/browser';
 import '../App.css';
 
 const Contact = () => {
-  // Use @emailjs for emailing yourself
-  //www.npmjs.com/package/@emailjs/nodejs
+  const toast = useToast();
   const formRef = useRef();
 
   const sendEmail = e => {
@@ -24,18 +24,35 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
+        'service_8pxmema',
         'template_fopkfnw',
         formRef.current,
-        '-3KYBa4-K7Srj304o'
+        'VMxKIY5HoKr2XotMa'
       )
       .then(
-        () => {
-          alert('email sent!');
+        result => {
+          toast({
+            icon: '✅',
+            title: 'Email sent successfully!',
+            description:
+              'Thanks for sending email! I will get back as soon as possible',
+            status: 'success',
+            duration: 3000,
+            isClosable: true,
+          });
           window.location.reload(false);
         },
-        () => {
-          alert('Sending email failed, please try again!');
+        error => {
+          toast({
+            icon: '❌',
+            title: 'Oops! Something went wrong',
+            description:
+              'Please try again ' +
+              'or send me an email directly at maladkar.ninad@gmail.com',
+            status: 'warning',
+            duration: 5000,
+            isClosable: true,
+          });
         }
       );
   };
@@ -66,7 +83,7 @@ const Contact = () => {
           <Box display="flex" gap={6} mt={16}>
             <FormControl isRequired>
               <Input
-                name="name"
+                name="from_name"
                 variant="flushed"
                 _placeholder={{ color: 'green.700', opacity: 1 }}
                 focusBorderColor="teal.200"
@@ -78,7 +95,7 @@ const Contact = () => {
             </FormControl>
             <FormControl isRequired>
               <Input
-                name="email"
+                name="user_email"
                 variant="flushed"
                 _placeholder={{ color: 'green.700', opacity: 1 }}
                 focusBorderColor="teal.200"
@@ -120,6 +137,8 @@ const Contact = () => {
             borderColor="teal.400"
             py={6}
             px={12}
+            type="submit"
+            value="Send"
           >
             Send Email
           </Button>

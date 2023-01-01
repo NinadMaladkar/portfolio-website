@@ -25,7 +25,7 @@ const About = () => {
         justifyContent="start"
         rowGap="10px"
       >
-        <Heading size="4xl" mb={6} class="heading">
+        <Heading size="4xl" mb={6} className="heading">
           About me
         </Heading>
         <Box

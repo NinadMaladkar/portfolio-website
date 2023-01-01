@@ -9,12 +9,12 @@ const Footer = () => {
         <Button
           variant="link"
           size="xl"
-          color="blue"
+          color="#0072b1"
           rightIcon={<SiLinkedin />}
         ></Button>
         <Button
           variant="link"
-          color="red"
+          color="#de5246"
           size="xl"
           rightIcon={<SiGmail />}
         ></Button>
