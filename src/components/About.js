@@ -125,7 +125,7 @@ const About = () => {
         </HStack>
         <HStack ml={12} mt={16} gap={16}>
           <Button
-            rightIcon={<SiGithub />}
+            rightIcon={<SiGithub color="white" />}
             borderColor="blue.400"
             color="blue.300"
             variant="outline"
@@ -136,7 +136,7 @@ const About = () => {
             My GitHub
           </Button>
           <Button
-            rightIcon={<SiLinkedin />}
+            rightIcon={<SiLinkedin color="#0072b1" />}
             borderColor="blue.400"
             color="blue.300"
             variant="outline"

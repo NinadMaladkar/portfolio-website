@@ -65,8 +65,8 @@ const Contact = () => {
       justifyContent="center"
       alignSelf="center"
     >
-      <Heading id="contact">Let's Get In Touch</Heading>
-      <Text my={8} maxW="40vw">
+      <Heading>Let's Get In Touch</Heading>
+      <Text my={8} maxW="40vw" id="contact">
         If you'd like to chat about a project or just want to get in touch with
         me, please fill in the form below. I aim to get back within couple of
         days.

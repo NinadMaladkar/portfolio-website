@@ -20,10 +20,13 @@ import ScrollDownComponent from './ScrollDownComponent';
 const Experience = () => {
   return (
     <Box className="section" display="flex" flexDir="column" mb={32}>
-      <Divider w="80vw" mt={64} mb={32} alignSelf="center" />
-      <Heading id="experience"> I've worked with </Heading>
+      <Divider w="80vw" mt={32} mb={32} alignSelf="center" />
+      <Heading id="experience" size="3xl">
+        I've worked with
+      </Heading>
       <Tabs
         mt={32}
+        mb={16}
         colorScheme="green"
         size="lg"
         orientation="vertical"
