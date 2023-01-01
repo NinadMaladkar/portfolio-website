@@ -25,25 +25,6 @@ function App() {
       <Header />
       <Box textAlign="center" fontSize="xl">
         <Box p={3} display="flex" flexDir="column" justifyContent="center">
-          {/* <VStack
-            spacing={8}
-            className="logo-class animate__animated animate__bounce"
-          >
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Learn Chakra
-              </Link>
-            </VStack> */}
-
           <Home />
           <Divider w="80vw" alignSelf="center" />
           <About />
