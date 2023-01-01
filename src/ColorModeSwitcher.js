@@ -4,7 +4,6 @@ import {
   useColorModeValue,
   IconButton,
   Tooltip,
-  Box,
 } from '@chakra-ui/react';
 // import { FaMoon } from 'react-icons/fa';
 import { FiSun, FiMoon } from 'react-icons/fi';
