@@ -4,26 +4,46 @@ import React from 'react';
 import ScrollDownComponent from './ScrollDownComponent';
 const Home = () => {
   return (
-    <Box display="flex" justifyContent="center">
+    <Box
+      display="flex"
+      justifyContent={{ base: 'start', lg: 'center' }}
+      id="home"
+    >
       <Box
         className="section"
         display="flex"
-        alignItems="start"
+        alignItems={{ base: 'center ', lg: 'start' }}
         flexDirection="column"
-        w="70vw"
-        // bgColor="whiteAlpha.300"
-        pl={16}
+        w={{ base: '80%', lg: '70%' }}
+        pl={{ base: '5%', lg: '6%' }}
       >
-        {/* Change font */}
         <Text
           fontFamily="SF Mono"
           color="teal.300"
           className="animate__animated animate__fadeInRight animate__slow animate__delay-1s "
+          textAlign="start"
         >
           Hi, my name is
         </Text>
-        <Box mb="4vh" textAlign="start" className="heading-container">
-          <Heading my={4} size="4xl" className="heading typing-animation">
+        <Box mb="4vh" textAlign="start">
+          <Heading
+            my={4}
+            maxW="80vw"
+            size={{ base: 'xl', lg: '4xl' }}
+            className="heading typing-animation"
+            display={{ base: 'none', lg: 'block' }}
+          >
+            Ninad Maladkar.
+            <br />
+            I'm a full stack web developer.
+          </Heading>
+          <Heading
+            my={4}
+            maxW="80vw"
+            display={{ lg: 'none' }}
+            size={{ base: '2xl', lg: '4xl' }}
+            className="heading animate__animated animate__fadeInLeft animate__slow animate__delay-1s"
+          >
             Ninad Maladkar.
             <br />
             I'm a full stack web developer.
