@@ -1,4 +1,4 @@
-import { Box, Button, Text, Heading } from '@chakra-ui/react';
+import { Box, Button, Text, Heading, Divider } from '@chakra-ui/react';
 import React from 'react';
 
 import ScrollDownComponent from './ScrollDownComponent';
@@ -21,7 +21,7 @@ const Home = () => {
           fontFamily="SF Mono"
           color="teal.300"
           className="animate__animated animate__fadeInRight animate__slow animate__delay-1s "
-          textAlign="start"
+          alignSelf={{ base: 'start' }}
         >
           Hi, my name is
         </Text>
@@ -29,24 +29,25 @@ const Home = () => {
           <Heading
             my={4}
             maxW="80vw"
-            size={{ base: 'xl', lg: '4xl' }}
+            size={{ lg: '4xl' }}
             className="heading typing-animation"
             display={{ base: 'none', lg: 'block' }}
           >
             Ninad Maladkar.
             <br />
-            I'm a full stack web developer.
+            I'm a full stack developer.
           </Heading>
           <Heading
+            textAlign="start"
             my={4}
             maxW="80vw"
             display={{ lg: 'none' }}
-            size={{ base: '2xl', lg: '4xl' }}
+            size={{ base: '2xl' }}
             className="heading animate__animated animate__fadeInLeft animate__slow animate__delay-1s"
           >
             Ninad Maladkar.
             <br />
-            I'm a full stack web developer.
+            I'm a full stack developer.
           </Heading>
         </Box>
         <Box
@@ -79,6 +80,7 @@ const Home = () => {
         <a href="#about" className="link-arrow">
           <ScrollDownComponent />
         </a>
+        <Divider />
       </Box>
     </Box>
   );

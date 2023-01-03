@@ -19,13 +19,13 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Box p={3} display="flex" flexDir="column" justifyContent="center">
           <Home />
-          <Divider w="80vw" alignSelf="center" />
+          {/* <Divider w="80vw" alignSelf="center" /> */}
           <About />
-          <Divider w="80vw" alignSelf="center" />
+
           <Projects />
 
           <Experience />
-          <Divider w="80vw" alignSelf="center" />
+
           <Contact />
         </Box>
         <Footer />
