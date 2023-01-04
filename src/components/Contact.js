@@ -78,9 +78,16 @@ const Contact = () => {
         borderColor="teal.400"
         px="12"
         borderRadius={32}
+        w={'100%'}
       >
         <form ref={formRef} onSubmit={sendEmail}>
-          <Box display="flex" gap={6} mt={16}>
+          <Box
+            display="flex"
+            flexDir={{ base: 'column', md: 'row' }}
+            gap={6}
+            mt={16}
+            w="50vw"
+          >
             <FormControl isRequired>
               <Input
                 name="from_name"
@@ -90,7 +97,7 @@ const Contact = () => {
                 borderColor="teal.400"
                 placeholder="Your name"
                 h={16}
-                w={80}
+                w={{ base: '80%', md: '100%' }}
               />
             </FormControl>
             <FormControl isRequired>
@@ -102,7 +109,7 @@ const Contact = () => {
                 borderColor="teal.400"
                 placeholder="Your email"
                 h={16}
-                w={80}
+                w={{ base: '80%', md: '100%' }}
               />
             </FormControl>
           </Box>
@@ -115,6 +122,7 @@ const Contact = () => {
               borderColor="teal.400"
               placeholder="Subject"
               h={16}
+              w={{ base: '80%', md: '100%' }}
             />
           </FormControl>
           <FormControl isRequired>
@@ -128,6 +136,7 @@ const Contact = () => {
               h={32}
               placeholder="Your message for me.."
               resize="vertical"
+              w={{ base: '80%', md: '100%' }}
             />
           </FormControl>
           <Button

@@ -75,7 +75,7 @@ const Experience = () => {
       ],
     },
     {
-      name: 'CeX WeBuy',
+      name: 'CeX',
       jobTitle: 'Software Engineer',
       period: 'August 2013 - October 2019',
       experience: [
@@ -87,9 +87,9 @@ const Experience = () => {
     },
   ];
   return (
-    <Box className="section" display="flex" flexDir="column" mb={32}>
-      <Divider w="80vw" mt={40} mb="5%" alignSelf="center" />
-      <Heading id="experience" size={{ base: 'xl', md: '3xl' }}>
+    <Box className="section" display="flex" flexDir="column" mb={20}>
+      <Divider w="80vw" mt={20} mb="5%" alignSelf="center" />
+      <Heading id="experience" size={{ base: 'xl', md: '3xl' }} mt={12}>
         I've worked with
       </Heading>
       <Tabs
@@ -117,11 +117,17 @@ const Experience = () => {
           {organizations.map(
             ({ jobTitle, experience, name, period }, index) => (
               <TabPanel key={index}>
-                <Heading mb={4} size="md">
+                <Heading
+                  mb={4}
+                  size="md"
+                  textAlign={{ base: 'center', md: 'start' }}
+                >
                   {jobTitle}
                 </Heading>
-                <Heading size="sm">{period}</Heading>
-                <Divider w="50%" my={'2%'} />
+                <Heading size="sm" textAlign={{ base: 'center', md: 'start' }}>
+                  {period}
+                </Heading>
+                <Divider w={{ base: '100%', md: '50%' }} my={'6%'} />
                 <List
                   w="80%"
                   spacing={4}
@@ -143,7 +149,7 @@ const Experience = () => {
       <a href="#contact" className="link-arrow">
         <ScrollDownComponent />
       </a>
-      <Divider my="5%" w="80%" alignSelf="center" />
+      <Divider mt={20} w="80%" alignSelf="center" />
     </Box>
   );
 };

@@ -49,9 +49,9 @@ const ProjectBox = ({
     <div ref={ref}>
       <motion.div animate={animation}>
         <Card
-          direction="row"
+          direction={{ base: 'column', md: 'row' }}
           variant="outlined"
-          w="60vw"
+          w="70vw"
           py={4}
           px={12}
           mb={4}
@@ -59,31 +59,42 @@ const ProjectBox = ({
           border="1px"
           borderColor="gray.600"
           backgroundColor="blackAlpha.300"
+          boxShadow="dark-lg"
+          justifyContent="center"
         >
-          {alignImage === 'right' ? null : (
-            <Image
-              borderRadius={24}
-              objectFit="cover"
-              maxW={{ base: '100%', sm: '300px' }}
-              src={image}
-              alt={name}
-            />
-          )}
+          <Image
+            borderRadius={24}
+            objectFit="cover"
+            minW={{ base: '100%', md: '30%' }}
+            maxW={{ base: '100%', md: '40%' }}
+            src={image}
+            alt={name}
+          />
 
           <Stack>
-            <CardBody textAlign="start">
+            <CardBody textAlign={{ base: 'center', md: 'start' }} minW="100%">
               <Heading size="md" mb={4}>
                 {name}
               </Heading>
-              <Text py="2">{description}</Text>
-              <Box display="flex" wrap="wrap" gap={2} mt={2}>
+              <Text py="2" fontSize={{ base: 'sm', md: '2xl' }} minW="100%">
+                {description}
+              </Text>
+              <Box
+                display="flex"
+                flexWrap="wrap"
+                flexDir={{ base: 'column', md: 'row' }}
+                alignItems={{ base: 'center', md: '' }}
+                gap={2}
+                mt={2}
+              >
                 {technologies.map(tech => (
                   <Tag
+                    key={tech}
                     borderRadius="full"
-                    size="lg"
+                    size="sm"
                     colorScheme="green"
                     variant="solid"
-                    maxW="25vw"
+                    maxW={{ base: '20vw', md: '25vw' }}
                   >
                     {tech}
                   </Tag>
@@ -91,7 +102,11 @@ const ProjectBox = ({
               </Box>
             </CardBody>
 
-            <CardFooter display="flex" gap={2}>
+            <CardFooter
+              display="flex"
+              flexDir={{ base: 'column', md: 'row' }}
+              gap={2}
+            >
               <Link href={githubLink} isExternal>
                 <Button
                   variant="outline"
@@ -112,15 +127,6 @@ const ProjectBox = ({
               </Link>
             </CardFooter>
           </Stack>
-          {alignImage === 'right' ? (
-            <Image
-              objectFit="cover"
-              maxW={{ base: '100%', sm: '300px' }}
-              borderRadius={24}
-              src={image}
-              alt={name}
-            />
-          ) : null}
         </Card>
       </motion.div>
     </div>

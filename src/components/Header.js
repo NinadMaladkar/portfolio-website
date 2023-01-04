@@ -10,7 +10,6 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   Stack,
 } from '@chakra-ui/react';
 
@@ -101,10 +100,10 @@ const Header = () => {
           placement="right"
           onClose={onClose}
           finalFocusRef={btnRef}
+          size="xs"
         >
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerCloseButton />
             <DrawerHeader>
               <ColorModeSwitcher />
             </DrawerHeader>

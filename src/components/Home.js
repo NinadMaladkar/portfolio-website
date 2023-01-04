@@ -77,10 +77,12 @@ const Home = () => {
         >
           Let's work together
         </Button>
-        <a href="#about" className="link-arrow">
-          <ScrollDownComponent />
-        </a>
-        <Divider />
+        <Box alignSelf="center">
+          <a href="#about" className="link-arrow">
+            <ScrollDownComponent />
+          </a>
+        </Box>
+        <Divider my={12} w="80vw" alignSelf="center" />
       </Box>
     </Box>
   );

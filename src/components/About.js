@@ -2,7 +2,7 @@ import {
   Box,
   Button,
   Text,
-  HStack,
+  Divider,
   Heading,
   Image,
   Tag,
@@ -26,12 +26,7 @@ const About = () => {
   ];
   return (
     <Box className="section" id="about" textAlign="start" flexDir="column">
-      <Heading
-        size="xl"
-        mb="5%"
-        className="heading"
-        mt={{ base: '15vh', md: '0' }}
-      >
+      <Heading size="xl" mb="5%" className="heading">
         About me
       </Heading>
       <Box
@@ -40,22 +35,23 @@ const About = () => {
         justifyContent={{ base: 'center', md: 'start' }}
       >
         <Box
-          w={{ base: '100vw', md: '40vw' }}
+          w={{ base: '100vw', md: '50vw' }}
           display="flex"
-          justifyContent="center"
+          justifyContent={{ base: 'center', md: '' }}
         >
           <Image
             src="images/Ninad_Maladkar.png"
             alt="Ninad"
-            w={{ base: '50%', md: '90%' }}
+            w={{ base: '50%', md: '100%' }}
             h={{ base: '100%', md: '500px' }}
           />
         </Box>
 
         <Box
-          maxW="60vw"
+          maxW={{ base: '100vw', md: '60vw' }}
           mt={{ base: '5%', md: '0' }}
-          ml={{ base: '25%', md: '5%' }}
+          ml={{ md: '5%' }}
+          px={{ base: '10%', md: 0 }}
           fontFamily="calibre.400"
           color="whiteAlpha.600"
           display="flex"
@@ -80,7 +76,7 @@ const About = () => {
             Few technologies I have been recently working with 👨🏻‍💻
           </Text>
           <Box
-            ml={12}
+            ml={{ base: 0, md: 12 }}
             mt={6}
             gap={{ base: '8px', md: '' }}
             w={{ base: '100%', md: '70%' }}
@@ -104,9 +100,9 @@ const About = () => {
             ))}
           </Box>
           <Stack
-            ml={12}
+            alignSelf={{ base: 'center', md: 'start' }}
             mt={16}
-            gap={0}
+            gap={{ base: 0, md: 6 }}
             direction={{ base: 'column', md: 'row' }}
           >
             <Button
@@ -137,18 +133,14 @@ const About = () => {
               My LinkedIn
             </Button>
           </Stack>
-          <HStack ml={{ base: '50%', md: 44 }}>
-            <a href="#projects" className="link-arrow">
-              <ScrollDownComponent />
-            </a>
-          </HStack>
         </Box>
       </Box>
-      {/* <Divider
-        w="80vw"
-        alignSelf="center"
-        display={{ base: 'block', md: 'none' }}
-      /> */}
+      <Box my={12}>
+        <a href="#projects" className="link-arrow">
+          <ScrollDownComponent />
+        </a>
+      </Box>
+      <Divider w="80vw" alignSelf="center" />
     </Box>
   );
 };

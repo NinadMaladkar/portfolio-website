@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'Pokémonia',
     description:
-      'This is a pokémon app based on pokeAPI. This app lets you view the information of all pokémons & sort them out by their weights and search through the list of all pokémons.',
+      'This is a pokémon app based on pokeAPI. This app lets you view the information of all pokémons and sort them out by their weights and search through the list of all pokémons.',
     image: 'images/projects/pokemon.png',
     alignImage: 'left',
     githubLink: 'https://github.com/NinadMaladkar/Pokemon-app',
@@ -47,8 +47,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <VStack gap={64}>
-      <Heading size="2xl" className="heading" mt={36} id="projects">
+    <VStack>
+      <Heading size="2xl" className="heading" my={20} id="projects">
         Some of the recent projects I've built
       </Heading>
 
