@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Box, theme, Divider } from '@chakra-ui/react';
+import { ChakraProvider, Box, theme } from '@chakra-ui/react';
 import 'animate.css';
 
 import './App.css';
@@ -19,13 +19,9 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Box p={3} display="flex" flexDir="column" justifyContent="center">
           <Home />
-          {/* <Divider w="80vw" alignSelf="center" /> */}
           <About />
-
           <Projects />
-
           <Experience />
-
           <Contact />
         </Box>
         <Footer />
