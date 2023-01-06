@@ -15,7 +15,6 @@ import {
 
 import React, { useRef } from 'react';
 import { useDisclosure } from '@chakra-ui/hooks';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { GiHamburgerMenu, GiBriefcase } from 'react-icons/gi';
 import { AiFillHome, AiFillProject, AiFillPhone } from 'react-icons/ai';
 import { MdAccountCircle } from 'react-icons/md';
