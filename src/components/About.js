@@ -38,12 +38,14 @@ const About = () => {
           w={{ base: '100vw', md: '50vw' }}
           display="flex"
           justifyContent={{ base: 'center', md: '' }}
+          alignItems={{ md: 'start' }}
+          h="auto"
         >
           <Image
             src="images/Ninad_Maladkar.png"
             alt="Ninad"
-            w={{ base: '50%', md: '100%' }}
-            h={{ base: '100%', md: '500px' }}
+            maxW={{ base: '50%', md: '100%' }}
+            fit="scale-down"
           />
         </Box>
 

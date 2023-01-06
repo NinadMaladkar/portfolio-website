@@ -64,7 +64,7 @@ const ProjectBox = ({
         >
           <Image
             borderRadius={24}
-            objectFit="cover"
+            fit="scale-down"
             minW={{ base: '100%', md: '30%' }}
             maxW={{ base: '100%', md: '40%' }}
             src={image}
