@@ -83,7 +83,7 @@ const Header = () => {
         className="animate__animated animate__fadeInDown "
         display={{ base: 'none', lg: 'flex' }}
       >
-        <ColorModeSwitcher />
+        {/* <ColorModeSwitcher /> */}
       </Box>
       <Box display={{ base: 'flex', lg: 'none' }}>
         <Button
@@ -104,9 +104,7 @@ const Header = () => {
         >
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerHeader>
-              <ColorModeSwitcher />
-            </DrawerHeader>
+            <DrawerHeader>{/* <ColorModeSwitcher /> */}</DrawerHeader>
 
             <DrawerBody fontSize="xl">
               <Stack direction="column" alignItems="start" rowGap={4} mt={6}>
