@@ -124,7 +124,11 @@ const Experience = () => {
                 >
                   {jobTitle}
                 </Heading>
-                <Heading size="sm" textAlign={{ base: 'center', md: 'start' }}>
+                <Heading
+                  size="sm"
+                  color="whiteAlpha.600"
+                  textAlign={{ base: 'center', md: 'start' }}
+                >
                   {period}
                 </Heading>
                 <Divider w={{ base: '100%', md: '50%' }} my={'6%'} />
@@ -135,7 +139,7 @@ const Experience = () => {
                   className="animate__animated animate__fadeIn delay-1s"
                 >
                   {experience.map((exp, index) => (
-                    <ListItem key={index}>
+                    <ListItem key={index} color="whiteAlpha.600">
                       <ListIcon as={AiFillCaretRight} color="green.200" />
                       {exp}
                     </ListItem>

@@ -18,6 +18,7 @@ const Home = () => {
         pl={{ base: '5%', lg: '6%' }}
       >
         <Text
+          mt={{ base: 12, lg: 40 }}
           fontFamily="SF Mono"
           color="teal.300"
           className="animate__animated animate__fadeInRight animate__slow animate__delay-1s "

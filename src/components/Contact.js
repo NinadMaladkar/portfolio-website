@@ -66,7 +66,7 @@ const Contact = () => {
       alignSelf="center"
     >
       <Heading>Let's Get In Touch</Heading>
-      <Text my={8} maxW="40vw" id="contact">
+      <Text my={8} maxW="40vw" id="contact" color="whiteAlpha.600">
         If you'd like to chat about a project or just want to get in touch with
         me, please fill in the form below. I aim to get back within couple of
         days.

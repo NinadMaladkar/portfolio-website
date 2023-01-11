@@ -76,7 +76,12 @@ const ProjectBox = ({
               <Heading size="md" mb={4}>
                 {name}
               </Heading>
-              <Text py="2" fontSize={{ base: 'sm', md: '2xl' }} minW="100%">
+              <Text
+                py="2"
+                fontSize={{ base: 'sm', md: 'xl' }}
+                minW="100%"
+                color="whiteAlpha.600"
+              >
                 {description}
               </Text>
               <Box

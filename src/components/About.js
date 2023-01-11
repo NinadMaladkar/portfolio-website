@@ -23,6 +23,8 @@ const About = () => {
     'ExpressJS',
     'MongoDB',
     'PostgreSQL',
+    'Vue3',
+    'Composition API',
   ];
   return (
     <Box className="section" id="about" textAlign="start" flexDir="column">
@@ -89,7 +91,7 @@ const About = () => {
             {currentTechnologies.map((tech, index) => (
               <Box key={index} w={{ base: '20vw' }}>
                 <Tag
-                  fontSize={{ base: 'sm', md: 'lg' }}
+                  fontSize={{ base: 'xs', md: 'lg' }}
                   borderRadius="full"
                   size={{ base: 'sm', md: 'lg' }}
                   colorScheme="green"
