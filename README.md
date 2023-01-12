@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website is my portfolio website which is live on [ninadmaladkar.com](https://www.ninadmaladkar.com).
+
+The web app was built using React, Chakra UI
 
 ## Available Scripts
 
