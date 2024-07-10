@@ -30,13 +30,15 @@ const Experience = () => {
   );
   const organizations = [
     {
-      name: 'PaketConcierge',
+      name: 'heyData GmbH',
       jobTitle: 'Full Stack Engineer',
-      period: 'June 2022 - August 2022',
+      period: 'May 2023 - Current',
       experience: [
-        'I worked as a full-stack developer. Created a command line based application which collected information of paket stores around Berlin using different APIs and stored them in a single json file for future use.',
-        'Helped juniors with ReactJS and JavaScript related queries and',
-        'Participated in discussions for creating a better architecture for bigger client base and automation of processes.',
+        'Designed and streamlined the usage of the i18n library, centralizing translations in a Google sheet for enhanced collaboration between developers and product managers, reducing inefficiencies and saving time for everyone in the process.',
+        "Implemented 'Share Certificate on LinkedIn' functionality, which generated certificate images for users to share on LinkedIn using JIMP library. This feature enhanced the company's visibility and client reach by increasing platform traffic and allowing users to share certificates as a post and add them to their LinkedIn profiles",
+        'Developed backend CRUD services for client admins using NestJS, Express, and PostgreSQL, enabling functionalities such as user invitations, document assignment and updates, deletion, and client offboarding etc.',
+        'Utilized Ruby on Rails with the ActiveAdmin framework to execute migrations and add new database columns and tables. Added foundational elements such as modifying existing services and creating new tables and columns using Ruby migrations for the upcoming EU AI Act compliance project, gaining a foundational understanding of Ruby.',
+        'Developed new pages for heyAcademy, a tool enabling clients to create courses for their employees, utilizing Nuxt.js and Vue.js on the frontend and NestJS with Express.js on the backend.',
       ],
     },
     {
