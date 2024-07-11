@@ -19,7 +19,7 @@ import { AiFillCaretRight } from 'react-icons/ai';
 import ScrollDownComponent from './ScrollDownComponent';
 
 const Experience = () => {
-  const orientation = useBreakpointValue(
+  const orientation: 'horizontal' | 'vertical' | undefined = useBreakpointValue(
     {
       base: 'horizontal',
       md: 'vertical',
@@ -106,7 +106,7 @@ const Experience = () => {
         <TabList
           gap="2%"
           w={{ base: '80vw', md: '40%' }}
-          overflowY={{ base: 'auto', md: 'none' }}
+          overflowY={{ base: 'auto', md: 'hidden' }}
         >
           {organizations.map(({ name }, index) => (
             <Tab _hover={{ color: 'white', bg: 'teal' }} key={index}>
