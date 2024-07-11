@@ -17,6 +17,7 @@ import {
 import { AiFillCaretRight } from 'react-icons/ai';
 
 import ScrollDownComponent from './ScrollDownComponent';
+import { Organizations } from '../interfaces/organizations';
 
 const Experience = () => {
   const orientation: 'horizontal' | 'vertical' | undefined = useBreakpointValue(
@@ -28,7 +29,7 @@ const Experience = () => {
       fallback: 'lg',
     }
   );
-  const organizations = [
+  const organizations: Organizations[] = [
     {
       name: 'heyData GmbH',
       jobTitle: 'Full Stack Engineer',
