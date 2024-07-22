@@ -53,9 +53,9 @@ const Header = () => {
         <a href="#about">
           <Text>About</Text>
         </a>
-        <a href="#projects">
+        {/* <a href="#projects">
           <Text>Projects</Text>
-        </a>
+        </a> */}
         <a href="#experience">
           <Text>Experience</Text>
         </a>
@@ -63,7 +63,7 @@ const Header = () => {
           <Text>Contact</Text>
         </a>
         <a
-          href="pdf/Ninad_Maladkar_Resume.pdf"
+          href="pdf/CV_Ninad_Maladkar_Fullstack_developer_2024.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

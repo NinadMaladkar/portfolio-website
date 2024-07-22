@@ -44,7 +44,7 @@ const About = () => {
           h="auto"
         >
           <Image
-            src="images/Ninad_Maladkar.png"
+            src="images/Ninad_Maladkar.jpg"
             alt="Ninad"
             maxW={{ base: '50%', md: '100%' }}
             fit="scale-down"
@@ -65,21 +65,48 @@ const About = () => {
           rowGap="10px"
           fontSize={{ base: 'md', md: '2xl' }}
         >
-          <Text>👋 I'm Ninad. I have been coding for nearly 8 years. </Text>
+          <Text>👋 I'm Ninad. I have been coding for past 6+ years. </Text>
+          <Text>
+            🛠 My career path has blended continuous learning, technical
+            leadership, and hands-on software development. This includes
+            implementing impactful features such as the 'Share Certificate on
+            LinkedIn' functionality, enhancing company visibility and client
+            reach.
+          </Text>
+          <Text>
+            🚀 My motto: "Crafting seamless experiences with every line of
+            code."
+          </Text>
+          <Text>💻 Programming Languages: JavaScript, TypeScript, SQL</Text>
+          <Text>
+            🔧 Technologies & Tools: React, Vue.js, Node.js, NestJS, Express.js,
+            Next.js, Docker, REST APIs, MongoDB, Git, Jest, PostgreSQL, Design
+            Patterns, Data Structures and Algorithms
+          </Text>
+
+          <Text>☁️ Cloud: AWS, Google Cloud Platform (GCP), CI/CD</Text>
+          <Text>
+            📊 Methodologies: SCRUM, Agile, KANBAN, TDD, Agile Development
+            Practices 🌐 Interests: GraphQL, Testing, Microservices, SQL, API
+            Design and Development, Frontend/Backend Architecture
+          </Text>
+          <Text>
+            Apart from coding, I'm a semi-professional Table Tennis player and
+            trainer 🏓
+          </Text>
+          {/* <Text>👋 I'm Ninad. I have been coding for nearly 8 years. </Text>
           <Text>
             I'm a full-stack engineer who loves to learn new technologies and
             build web apps.
           </Text>
-
           <Text>
-            When I'm not coding, I'm a semi-professional Table Tennis player and
-            coach 🏓
+            
           </Text>
           <Text>A proud father of a naughty newborn baby girl 👨‍👩‍👧</Text>
           <Text mt={12}>
             Few technologies I have been recently working with 👨🏻‍💻
-          </Text>
-          <Box
+          </Text> */}
+          {/* <Box
             ml={{ base: 0, md: 12 }}
             mt={6}
             gap={{ base: '8px', md: '' }}
@@ -102,7 +129,7 @@ const About = () => {
                 </Tag>
               </Box>
             ))}
-          </Box>
+          </Box> */}
           <Stack
             alignSelf={{ base: 'center', md: 'start' }}
             mt={16}

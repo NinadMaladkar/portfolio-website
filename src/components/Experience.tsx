@@ -35,11 +35,15 @@ const Experience = () => {
       jobTitle: 'Full Stack Engineer',
       period: 'May 2023 - Current',
       experience: [
-        'Designed and streamlined the usage of the i18n library, centralizing translations in a Google sheet for enhanced collaboration between developers and product managers, reducing inefficiencies and saving time for everyone in the process.',
-        "Implemented 'Share Certificate on LinkedIn' functionality, which generated certificate images for users to share on LinkedIn using JIMP library. This feature enhanced the company's visibility and client reach by increasing platform traffic and allowing users to share certificates as a post and add them to their LinkedIn profiles",
-        'Developed backend CRUD services for client admins using NestJS, Express, and PostgreSQL, enabling functionalities such as user invitations, document assignment and updates, deletion, and client offboarding etc.',
-        'Utilized Ruby on Rails with the ActiveAdmin framework to execute migrations and add new database columns and tables. Added foundational elements such as modifying existing services and creating new tables and columns using Ruby migrations for the upcoming EU AI Act compliance project, gaining a foundational understanding of Ruby.',
-        'Developed new pages for heyAcademy, a tool enabling clients to create courses for their employees, utilizing Nuxt.js and Vue.js on the frontend and NestJS with Express.js on the backend.',
+        'Designed and streamlined the usage of the i18n library, centralizing translations in JSON files. This enhanced collaboration between developers and product managers, reducing inefficiencies and saving time for everyone involved.',
+        "Implemented ‘Share Certificate on LinkedIn’ & ‘Add certificate to profile’ functionality using the JIMP library. This generated certificate images for users to share on LinkedIn, enhancing the company's visibility and client reach, increasing platform traffic significantly.",
+        'Developed backend CRUD services for client admins using NestJS, Express.js, and PostgreSQL. Enabled functionalities such as user invitations, document assignments and updates, deletions, and client offboarding.',
+        'Used Ruby on Rails with the ActiveAdmin framework to execute migrations and add new database columns and tables. Contributed to the latest EU AI Act compliance project, gaining foundational knowledge of Ruby.',
+        'Developed new pages for heyAcademy, a tool enabling clients to create courses for their employees. Utilized Nuxt.js and Vue.js with Vuetify.js on the frontend and NestJS with Express.js on the backend.',
+        'Created RESTful API endpoints, ensuring efficient data exchange between front-end and back-end systems, improving overall application performance.',
+        'Wrote comprehensive unit and integration tests using the Jest testing library, ensuring robust code quality and minimizing bugs in production.',
+        'Managed Docker containers and implemented CI/CD pipelines, ensuring seamless deployment processes and reducing time-to-market for new features.',
+        'Actively participated in code reviews and architecture discussions, contributing to continuous improvement in code quality and team knowledge sharing.',
       ],
     },
     {
@@ -47,51 +51,59 @@ const Experience = () => {
       jobTitle: 'Backend Engineer',
       period: 'December 2021 - May 2022',
       experience: [
-        'I Redesigned the website which was initiaally created in Flutter, we moved it to Vue.js and vuetify. I used GraphQL for API calls and Node.js as the backend server.',
-        'Integrated MetaMask 🦊 on their platform which confirmed orders with the node.js backend.',
-        'Also helped with integration of Solaris Digital Assets for token transfers.',
-        'Helped with creating user onboarding and authentication process creation.',
+        'Planned and executed the transition of the main website from Flutter to a Single Page Application (SPA) using Vue.js and Vuetify. Integrated backend services with GraphQL, resulting in a faster, more visually appealing website.',
+        'Designed backend services using Node.js, Express.js, and MySQL and MongoDB as databases. This improved data management and retrieval, enhancing overall application performance.',
+        'Integrated MetaMask using web3.js and SDA (Solaris Digital Assets) for token payments in crypto tokens with the existing website using Vue.js, resulting in a seamless user experience and secure transactions.',
+        'Collaborated with stakeholders to implement design improvements, ensuring the website meets user expectations and business requirements.',
+        'Utilized GitLab and Bitbucket for version control, helping smooth collaboration among team members.',
+        'Created and maintained comprehensive unit tests using the Jest testing library, ensuring high-quality code and reducing bugs in production.',
+        'Engaged in regular code reviews, providing feedback to team members and helping improve code quality.',
+        'Assisted in onboarding new team members, offering support to ensure their successful integration into the team.',
       ],
     },
-    {
-      name: 'Lemontaps',
-      jobTitle: 'Full Stack Engineer (Intern)',
-      period: 'July 2021 - November 2021',
-      experience: [
-        'Worked as a full stack developer with Node.js with Express.js as the backend technology and React.js as frontend technology.',
-        'Worked with typescript with Node.js.',
-        'Postgres SQL as Database.',
-        'Implemented  multiple backend services for different purposes.',
-        'Integrated OAuth services for user logins.',
-        'Worked with AWS S3 bucket for data storage as well as AWS Elastic Beanstalk to deploy Applications',
-      ],
-    },
-    {
-      name: 'Advancity',
-      jobTitle: 'Full Stack Engineer (Intern)',
-      period: 'September 2020 - November 2020',
-      experience: [
-        'Worked on both frontend with Vue.js & vuetify as and backend Node.js with Express',
-        'AWS S3 bucket for data storage',
-        'Integrated ziggeo video recorder and player on the platform to record and run videos.',
-        'Integrated other APIs for other uses like English grammar recognition, expression detection etc.',
-      ],
-    },
+    // {
+    //   name: 'Lemontaps',
+    //   jobTitle: 'Full Stack Engineer (Intern)',
+    //   period: 'July 2021 - November 2021',
+    //   experience: [
+    //     'Worked as a full stack developer with Node.js with Express.js as the backend technology and React.js as frontend technology.',
+    //     'Worked with typescript with Node.js.',
+    //     'Postgres SQL as Database.',
+    //     'Implemented  multiple backend services for different purposes.',
+    //     'Integrated OAuth services for user logins.',
+    //     'Worked with AWS S3 bucket for data storage as well as AWS Elastic Beanstalk to deploy Applications',
+    //   ],
+    // },
+    // {
+    //   name: 'Advancity',
+    //   jobTitle: 'Full Stack Engineer (Intern)',
+    //   period: 'September 2020 - November 2020',
+    //   experience: [
+    //     'Worked on both frontend with Vue.js & vuetify as and backend Node.js with Express',
+    //     'AWS S3 bucket for data storage',
+    //     'Integrated ziggeo video recorder and player on the platform to record and run videos.',
+    //     'Integrated other APIs for other uses like English grammar recognition, expression detection etc.',
+    //   ],
+    // },
     {
       name: 'CeX',
       jobTitle: 'Software Engineer',
       period: 'August 2013 - October 2019',
       experience: [
-        'I was single handedly handling their internal website which is used in all the CeX stores worldwide (more than 600 stores ).',
-        'I worked on their main website customer management system as well as the other management sysytem taking up on many projects for the same.',
-        'Learned Vue.js in short span of time to deliver a new product called kidx.com',
-        'After security breach on the website, I helped with fixing the issues with the website and encryption of important data. Also helped with following GDPR guidelines and  hiding important information.',
+        'Single-handedly maintained and developed the internal web application tool used by 600+ stores worldwide, ensuring smooth operations and functionality.',
+        'Interacted with stakeholders for requirement gathering and finalizing technical specifications and software documentation, helping project kick-off.',
+        'Developed the account management and product listing sections of a PWA website KidX using JavaScript, Vue.js, and RESTful web services, generating significant revenue for the organization.',
+        'Identified Personally Identifiable Information (PII) within various tools and implemented encryption to comply with GDPR rules, enhancing data security and compliance.',
+        'Utilized Agile methodologies, including Scrum and Kanban processes, to manage and execute development tasks efficiently.',
+        'Helped with regular code reviews, providing feedback to team members and promoting continuous improvement.',
+        'Collaborated effectively with a team of 4 developers, ensuring alignment with project goals and timelines.',
+        'Participated in knowledge-sharing sessions, helping to onboard new team members and develop a collaborative team environment.',
       ],
     },
   ];
   return (
     <Box className="section" display="flex" flexDir="column" mb={20}>
-      <Divider w="80vw" mt={20} mb="5%" alignSelf="center" />
+      {/* <Divider w="80vw" mt={20} mb="5%" alignSelf="center" /> */}
       <Heading id="experience" size={{ base: 'xl', md: '3xl' }} mt={12}>
         I've worked with
       </Heading>

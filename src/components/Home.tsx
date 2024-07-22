@@ -57,14 +57,15 @@ const Home = () => {
           textAlign="start"
           className="animate__animated animate__fadeInRight animate__slow animate__delay-1s "
         >
-          <Text>Over past 6+ years, working as an engineer, </Text>
           <Text>
-            I have happily contributed to small startups as well as big
-            companies.
+            Full-Stack Engineer with 6+ years of successful software delivery
+            experience.
           </Text>
           <Text>
-            I like to build great UI experiences along with a strong backend.
+            Specializing in JavaScript, TypeScript, React, Vue, Node.js, NestJS
+            and Express.js.
           </Text>
+          <Text>Interested in GraphQL, Testing, RESTful APIs, and SQL.</Text>
         </Box>
         <Button
           className="animate__animated animate__fadeInRight animate_slow animate__delay-1s "

@@ -19,8 +19,22 @@ const Contact = () => {
   const toast = useToast();
   const formRef = useRef();
 
-  const sendEmail = e => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!formRef.current) {
+      toast({
+        icon: '❌',
+        title: 'Oops! Something went wrong',
+        description:
+          'Please try again ' +
+          'or send me an email directly at maladkar.ninad@gmail.com',
+        status: 'warning',
+        duration: 5000,
+        isClosable: true,
+      });
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -29,32 +43,18 @@ const Contact = () => {
         formRef.current,
         'VMxKIY5HoKr2XotMa'
       )
-      .then(
-        result => {
-          toast({
-            icon: '✅',
-            title: 'Email sent successfully!',
-            description:
-              'Thanks for sending email! I will get back as soon as possible',
-            status: 'success',
-            duration: 3000,
-            isClosable: true,
-          });
-          window.location.reload(false);
-        },
-        error => {
-          toast({
-            icon: '❌',
-            title: 'Oops! Something went wrong',
-            description:
-              'Please try again ' +
-              'or send me an email directly at maladkar.ninad@gmail.com',
-            status: 'warning',
-            duration: 5000,
-            isClosable: true,
-          });
-        }
-      );
+      .then(result => {
+        toast({
+          icon: '✅',
+          title: 'Email sent successfully!',
+          description:
+            'Thanks for sending email! I will get back as soon as possible',
+          status: 'success',
+          duration: 3000,
+          isClosable: true,
+        });
+        window.location.reload();
+      });
   };
   return (
     <Center

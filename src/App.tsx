@@ -10,7 +10,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Box p={3} display="flex" flexDir="column" justifyContent="center">
           <Home />
           <About />
-          <Projects />
+          {/* <Projects /> */}
           <Experience />
           <Contact />
         </Box>
