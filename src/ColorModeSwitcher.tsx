@@ -8,7 +8,9 @@ import {
 // import { FaMoon } from 'react-icons/fa';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
-export const ColorModeSwitcher = props => {
+type ColorModeSwitcherProps = {};
+
+export const ColorModeSwitcher: React.FC<ColorModeSwitcherProps> = props => {
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue('dark', 'light');
   const SwitchIcon = useColorModeValue(FiMoon, FiSun);

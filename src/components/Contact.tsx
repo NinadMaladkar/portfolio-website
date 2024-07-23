@@ -17,7 +17,7 @@ import '../App.css';
 
 const Contact = () => {
   const toast = useToast();
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
