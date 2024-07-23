@@ -1,3 +1,4 @@
+import React from 'react';
 import { VStack, Heading } from '@chakra-ui/react';
 
 import ProjectBox from './ProjectBox';
