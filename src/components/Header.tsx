@@ -21,7 +21,7 @@ import { MdAccountCircle } from 'react-icons/md';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
+  const btnRef = useRef<HTMLButtonElement>(null);
   return (
     <Box
       className="animate__animated animate__fadeInDown "

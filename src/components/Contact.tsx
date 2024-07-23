@@ -19,7 +19,7 @@ const Contact = () => {
   const toast = useToast();
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
     if (!formRef.current) {
