@@ -18,7 +18,17 @@ import { BsFillPlayFill } from 'react-icons/bs';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const ProjectBox = ({
+interface ProjectBoxProps {
+  name: string;
+  description: string;
+  image: string;
+  alignImage: 'left' | 'right';
+  githubLink: string;
+  linkToApp: string;
+  technologies: string[];
+}
+
+const ProjectBox: React.FC<ProjectBoxProps> = ({
   name,
   description,
   image,

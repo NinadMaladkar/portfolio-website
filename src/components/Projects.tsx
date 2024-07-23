@@ -3,7 +3,17 @@ import { VStack, Heading } from '@chakra-ui/react';
 import ProjectBox from './ProjectBox';
 import ScrollDownComponent from './ScrollDownComponent';
 
-const projects = [
+interface Project {
+  name: string;
+  description: string;
+  image: string;
+  alignImage: 'left' | 'right';
+  githubLink: string;
+  linkToApp: string;
+  technologies: string[];
+}
+
+const projects: Project[] = [
   {
     name: 'Talk-tischtennis',
     description:
