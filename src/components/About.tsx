@@ -5,7 +5,6 @@ import {
   Divider,
   Heading,
   Image,
-  Tag,
   Stack,
 } from '@chakra-ui/react';
 import React from 'react';
@@ -14,18 +13,18 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 import ScrollDownComponent from './ScrollDownComponent';
 
 const About = () => {
-  const currentTechnologies = [
-    'Typescript',
-    'JavaScript',
-    'ReactJS',
-    'Chakra UI',
-    'Node.js',
-    'ExpressJS',
-    'MongoDB',
-    'PostgreSQL',
-    'Vue3',
-    'Composition API',
-  ];
+  // const currentTechnologies = [
+  //   'Typescript',
+  //   'JavaScript',
+  //   'ReactJS',
+  //   'Chakra UI',
+  //   'Node.js',
+  //   'ExpressJS',
+  //   'MongoDB',
+  //   'PostgreSQL',
+  //   'Vue3',
+  //   'Composition API',
+  // ];
   return (
     <Box className="section" id="about" textAlign="start" flexDir="column">
       <Heading size="xl" mb="5%" className="heading">
@@ -74,8 +73,8 @@ const About = () => {
             reach.
           </Text>
           <Text>
-            🚀 My motto: "Crafting seamless experiences with every line of
-            code."
+            🚀 My motto: "To persevere, is important for everybody. Don't give
+            up, don't give in. There's always an answer to everything."
           </Text>
           <Text>💻 Programming Languages: JavaScript, TypeScript, SQL</Text>
           <Text>
@@ -84,7 +83,7 @@ const About = () => {
             Patterns, Data Structures and Algorithms
           </Text>
 
-          <Text>☁️ Cloud: AWS, Google Cloud Platform (GCP), CI/CD</Text>
+          <Text>☁️ Cloud: AWS, CI/CD</Text>
           <Text>
             📊 Methodologies: SCRUM, Agile, KANBAN, TDD, Agile Development
             Practices 🌐 Interests: GraphQL, Testing, Microservices, SQL, API

@@ -62,10 +62,10 @@ const Home = () => {
             experience.
           </Text>
           <Text>
-            Specializing in JavaScript, TypeScript, React, Vue, Node.js, NestJS
-            and Express.js.
+            Specializing in JavaScript, TypeScript, React, Vue, Node.js and
+            NestJS.
           </Text>
-          <Text>Interested in GraphQL, Testing, RESTful APIs, and SQL.</Text>
+          <Text>Interested in GraphQL, Testing, Web Performance.</Text>
         </Box>
         <Button
           className="animate__animated animate__fadeInRight animate_slow animate__delay-1s "
